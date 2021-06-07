@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  calendar:
+    build: .
+    container_name: tass_calendar
+    env_file:
+        - .env
+    ports:
+        - 80:80
+
